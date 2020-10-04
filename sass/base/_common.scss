@@ -1,0 +1,43 @@
+body { 
+  //height: 100%;
+  //width: 100%;
+  font-family: $roboto; 
+  color: var(--main-text-color);
+  letter-spacing: 0.03em;
+  padding-top: 80px;
+ }
+
+ .container {
+   width: 100%px;
+   padding-left: 15px;
+   padding-right: 15px;
+   margin-left: auto;
+   margin-right: auto;
+
+
+  /* @include for-size(mobile) {
+     width: 480px;
+   }*/
+  
+ }
+
+
+ /*.flexbox {
+   display: flex;
+ }*/
+
+ /* убирает маркеры */
+ .list {
+   padding: 0px;
+   margin: 0px;
+   list-style: none;
+  }
+ 
+  /*делает картинки блочными*/
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  

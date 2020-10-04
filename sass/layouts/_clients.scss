@@ -1,0 +1,79 @@
+.clients__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    color: $secondary-text-color;
+    margin: 0px;
+    }
+    
+    .list.clients__list {
+     /*display: flex;
+     flex-wrap: wrap;*/
+     margin-top: 50px;
+    }
+    .clients__icon__items {
+     /*margin-right: 30px;*/
+    }
+    .clients__icon__items:last-child {
+     margin-right: 0px;
+    }
+    
+    .clients__icon__link {
+     /*display: flex;
+     flex-wrap: wrap;*/
+     width: 170px;
+     height: 90px;
+     justify-content: center;
+     align-items: center;
+     
+     border: 1px solid #AFB1B8;
+     fill: #AFB1B8;
+     border-radius: 4px;
+    }
+    .clients__icon__link:focus,
+    .clients__icon__link:hover,
+    .clients__icon__link:active {
+        .clients__icon {
+         fill: $accent-color;
+         transition: $animation;
+        }
+     fill: $accent-color;
+     border: 1px solid $accent-color;
+     transition: $animation;
+    }
+
+    .clients__icon.client1,
+    .clients__icon.client2,
+    .clients__icon.client3,
+    .clients__icon.client4,
+    .clients__icon.client5,
+    .clients__icon.client6 {
+     fill: $main-text-color;
+    }
+    
+    .clients__icon.client1 {
+     stroke: 0;
+     width: 45px;
+     height: 50px;
+    }
+    .clients__icon.client2 {
+     width: 40px;
+     height: 52px;
+    }
+    .clients__icon.client3 {
+     width: 41px;
+     height: 43px;
+    }
+    .clients__icon.client4 {
+     width: 80px;
+     height: 43px;
+    }
+    .clients__icon.client5 {
+     width: 59px;
+     height: 47px;
+    }
+    .clients__icon.client6 {
+     width: 89px;
+     height: 46px;
+    }

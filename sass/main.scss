@@ -1,0 +1,22 @@
+@import "./utils/variables";
+@import "./base/fonts";
+@import "./base/common";
+@import "./components/logo";
+@import "./components/icons-header";
+@import "./components/modal";
+@import "./components/backdrop";
+@import "./components/buttons";
+
+
+@import "./layouts/section";
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/advantages";
+@import "./layouts/examples";
+@import "./layouts/our-team";
+@import "./layouts/clients";
+@import "./layouts/footer";
+
+@import "./layouts/portfolio";
+
+@import "./utils/mixins"

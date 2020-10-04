@@ -1,0 +1,97 @@
+
+/*задаёт стили для секции наша команда*/
+
+.our-team {
+    background-color: $primary-button-bcg-color;
+    
+   }
+   
+   .our__team__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: $secondary-text-color;
+    margin-top: 0px;
+    margin-bottom: 50px;
+   }
+   
+   /*.grid,
+   .grid.our__team__member__box {
+    width:calc((100% - 30px * 3) / 4);
+     margin-right: 30px;
+    }
+    
+    .grid:nth-child(4n) {
+      margin-right: 0px;
+    }*/
+   
+   .list.our__team__list {
+    /*display: flex;
+    flex-wrap: wrap;*/
+   }
+   .our__team__member__box {
+    width: 270px;
+    padding-bottom: 30px;
+    margin: 0;
+    background-color: $main-white-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+   }
+   
+   
+   .our__team__names {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding: 0px;
+    color: $secondary-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+   }
+   .our__team__position {
+    margin-top: 10px;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: $main-text-color;
+   } 
+   
+   .list.our__team__social__links {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin: 0px;
+   }
+   
+   .our__team__social__item:not(:last-child) {
+     margin-right: 10px;
+    }
+    
+   
+   .our__team__social__icon__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: #AFB1B8;
+    background-color: transparent;
+   }
+   .our__team__social__icon__link:focus,
+   .our__team__social__icon__link:hover,
+   .our__team__social__icon__link:active {
+    background-color: $accent-color;
+    fill: $main-white-color;
+    transition: $animation;
+   }
+   
+   .our__team__icon {
+      width: 20px;
+      height: 20px;
+   }
