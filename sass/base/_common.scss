@@ -1,3 +1,14 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  // outline: 2px solid red;
+}
+
 body { 
   //height: 100%;
   //width: 100%;
@@ -8,18 +19,35 @@ body {
  }
 
  .container {
-   width: 100%px;
-   padding-left: 15px;
-   padding-right: 15px;
-   margin-left: auto;
-   margin-right: auto;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
 
+  @include for-size(mobile) {
+    width: 480px;
+  }
 
-  /* @include for-size(mobile) {
-     width: 480px;
-   }*/
-  
- }
+  @include for-size(tablet) {
+    width: 768px;
+  }
+
+  @include for-size(desktop) {
+    width: 1200px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.flexbox {
+  @include for-size(tablet) {
+    display: flex;
+     justify-content: space-between;
+  }
+}
+
+ 
 
 
  /*.flexbox {
@@ -34,10 +62,24 @@ body {
   }
  
   /*делает картинки блочными*/
+  
   img {
     display: block;
     max-width: 100%;
     height: auto;
   }
   
+  textarea {
+    resize: none;
+  }
   
+  .visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
