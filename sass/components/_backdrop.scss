@@ -15,4 +15,13 @@
     transition: 250ms linear 250ms;
     top: -100%;
     transform: translateX(-50%) scale(250ms);
+
+       @include for-size(mobile)  {
+    
+           padding-left: 15px;
+           padding-top: 93px;
+           padding-right: 15px;
+           padding-bottom: 94px;
+       }
+    
    }

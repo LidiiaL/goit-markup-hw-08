@@ -1,161 +1,153 @@
-.address-box {
-    width: 270px;
-   }
-   
-   .footer {
-    background-color: $footer-background-color;
-    padding-top: 60px;
-    padding-bottom: 60px;
-   }
+.footer {
+  background-color: $footer-background-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-   .footer__logo {
-    width: 145px;
-    height: 31px;
-    margin-bottom: 20px;
-   }
-   
-   .footer__real__address {
-     color: $main-white-color;
-     font-weight: 400;
-     font-size: 14px;
-     line-height: 1.8;
-     font-style: normal;
-     margin: 0px;
-   }
-   
-   .footer__mail__link,
-   .footer__phone__link {
-   
-   color: $main-text-color;
-   font-weight: 500;
-   font-size: 14px;
-   line-height: 2.5;
-   text-decoration: none;
-   font-style: normal;
-   }
-   
-   .footer__links__box {
-    width: 270px;
-    margin-right: 30px;
-   }
-   .footer__actions {
-   font-weight: 700;
-   color: $main-white-color;
-   font-size: 14px;
-   line-height: 16px;
-   letter-spacing: 0.03em;
-   text-transform: uppercase;
-   }
-   
-   .list.footer__social__links {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0px;
-    margin: 0px;
-   }
-   
-   .footer__social__item {
-     margin-right: 10px;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+
+.footer__box {
+  width: 100%;
+
+  &:not(:last-child) {
+    @include for-size(tablet) {
+      width: 50%;
     }
-    
-   .footer__social__item:nth-child(4n) {
-      margin-right: 0px;
+
+    @include for-size(desktop) {
+      width: calc((50% - 45px) / 2);
     }
-   
-   .footer__social__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    fill: $main-white-color;
-   }
-   .footer__social__icon:focus,
-   .footer__social__icon:hover,
-   .footer__social__icon:active {
-    background-color: $accent-color;
-    fill: $main-white-color;
-    transition: $animation;
-   }
-   
-   .footer__icon {
-      width: 20px;
-      height: 20px;
-      fill: $main-white-color;
-   }
-   
-   .footer__subscribe {
-    vertical-align: middle;
-    width: 570px;
-   }
-   .footer__subscribe__title{
-    color: $main-white-color;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-   }
-   
-   .footer__form {
-    position: relative;
-   }
-   
-   .footer__email {
-    display: inline-block;
-    width: 353px;
-    height: 50px;
-    padding: 15px 16px;
-    margin-top: 23px;
-   
-    background-color: $footer-background-color;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-sizing: border-box;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-   }
-   
-   .subscribe-button {
-    position: relative;
-    position: absolute;
-    top: 72%;
-    right: 0;
-    transform: translateY(-50%);
-    width: 200px;
-    height: 50px;
-    padding-top: 9px;
-    
+  }
+
+  &:last-child {
+    @include for-size(desktop) {
+      width: calc(50% - 15px);
+    }
+  }
+}
+
+.footer__box-title {
+  font-weight: 700;
+  color: $main-white-color;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.footer__logo {
+ margin-right: auto;
+ margin-left: auto;
+ margin-bottom: 20px;
+
+  max-width: 154px;
+  height: 28px;
+  
+  @include for-size(desktop) {
+    max-width: 145px;
+    min-height: 31px;
+    margin-right: 0;
+    margin-left: 0;  
+}
+}
+
+.footer__real__address {
+  color: $main-white-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.8;
+  font-style: normal;
+  margin: 0px;
+}
+
+.footer__mail__link,
+.footer__phone__link {
+  color: $main-text-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2.5;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.footer__social__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer__social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer__social__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: $main-white-color;
+}
+
+.footer__social__icon:focus,
+.footer__social__icon:hover,
+.footer__social__icon:active {
+  background-color: $accent-color;
+  fill: $main-white-color;
+  transition: $animation;
+}
+
+.footer__icon {
+  width: 20px;
+  height: 20px;
+  fill: $main-white-color;
+}
+
+.footer__email {
+  width: 100%;
+  max-width: 353px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-top: 23px;
+
+  background-color: $footer-background-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.subscribe-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  color: $main-white-color;
+  background-color: $accent-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  border-radius: 4px;
+  border: none;
+
+ @media screen and (min-width: 768px) {
+ margin-top: 20px;  
+ }
+  
+  @include for-size(desctop) {
     margin-left: 12px;
-    min-width: 200px;
-    
-   
-    color: $main-white-color;
-    background-color: $accent-color;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.8;
-    border-radius: 4px;
-    border: none;
-   }
-   
-   .subscribe__call {
-    position: absolute;
-    margin: 0;
-    top: 50%;
-    left: 29px;
-    transform: translateY(-50%);
-    
-   }
-   
-   .subscribe__icon__send {
-    position: absolute;
-    top: 50%;
-    right: 29px;
-    transform: translateY(-50%);
-   
-    width: 24px;
-    height: 24px;
-    fill: $main-white-color;
-    margin-left: 10px;
-   }
+  }
+}
+
+.subscribe__icon__send {
+  width: 24px;
+  height: 24px;
+  fill: $main-white-color;
+  margin-left: 10px;
+}

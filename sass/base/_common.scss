@@ -6,19 +6,16 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
-  // outline: 2px solid red;
+  outline: 2px solid red;
 }
 
-body { 
-  //height: 100%;
-  //width: 100%;
-  font-family: $roboto; 
-  color: var(--main-text-color);
+body {
+  font-family: $roboto;
+  color: $main-text-color;
   letter-spacing: 0.03em;
-  padding-top: 80px;
- }
+}
 
- .container {
+.container {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
@@ -35,51 +32,42 @@ body {
 
   @include for-size(desktop) {
     width: 1200px;
-    padding-left: 40px;
-    padding-right: 40px;
   }
 }
 
 .flexbox {
   @include for-size(tablet) {
     display: flex;
-     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
- 
+/* убирает маркеры */
+.list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
 
+/*делает картинки блочными*/
 
- /*.flexbox {
-   display: flex;
- }*/
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
- /* убирает маркеры */
- .list {
-   padding: 0px;
-   margin: 0px;
-   list-style: none;
-  }
- 
-  /*делает картинки блочными*/
-  
-  img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-  
-  textarea {
-    resize: none;
-  }
-  
-  .visually-hidden {
-    position: absolute !important;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-    padding: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden;
-  }
+textarea {
+  resize: none;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}

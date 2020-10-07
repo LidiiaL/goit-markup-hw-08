@@ -1,6 +1,27 @@
 
+/*.header-mobile {
+  
+    width: 100px;
+  height: 60px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  
+  background-color: $main-white-color;
+  border-bottom: solid 1px #ECECEC;  
+}
+
+
+      .header-mobile__logo {
+        max-width: 134px;
+        height: 28px;
+        margin-right: 93px;
+      }*/
+
+
+
      .page__header {
-       display: none;
+       @media screen and (max-width: 767px){
+        display: flex;
         position: fixed;
         top: 0;
         right: 0;
@@ -10,19 +31,40 @@
         background-color: $main-white-color;
         border-bottom: solid 1px #ECECEC;
         z-index: 2;
+       }
+       
       }
 
-      /*.page__header .flexbox {
+      
+
+      .page__header {
         justify-content: flex-end;
         align-items: center;
         padding: 0px;
+      }
+
+      .logo {
+        width: 134px;
+        height: 28px;
+        margin-right: 88px;
+        margin-left: 15px;
+        margin-top: 26px;
+        margin-bottom: 26px;
+
+        @media screen and (min-width: 1199px){
+          width: 145px;
+          height: 31px;
+          margin-right: 93px;
+          margin-top: 24px;
+          margin-bottom: 25px;
+        }
       }
 
       .navigation {
         display: flex;
         align-items: center;
         margin-right: auto; 
-        }*/
+        }
 
         .link {
           color: $secondary-text-color;
@@ -34,9 +76,12 @@
           list-style: none;
          }
          
-         /*.nav-list {
-          display: flex;
-         }*/
+         .nav-list {
+           @media screen and (min-width: 767px) {
+             display: flex;
+           }
+         }
+
          .nav-item {
           position: relative;
           font-weight: 500;
@@ -44,11 +89,11 @@
           line-height: 1.14;
           letter-spacing: 0.02em;
     
-         }
-         .nav-item:not(:last-child) {
-         /* margin-right: 50px;*/
+         &:not(:last-child) {
+          margin-right: 50px;
          }
          
+         }
          .nav-item :focus,
          .nav-item :hover,
          .nav-item :active {
@@ -78,21 +123,29 @@
           opacity: 1;
          }
      
-     
+     .address {
+       display: flex;
+       flex-direction: row;
+      width: 40px;
+      height: 20px;
+      color: palevioletred;
+    }
+
      .page__header .mail-link {
       margin-right: 50px;
      }
      
      
-     
      .address__number,
      .address__address {
      padding-left: 10px;
+     
      }
      
      
      .address__mail,
      .address__phone {
+      
       color: $main-text-color;
       font-weight: 500;
       font-size: 14px;

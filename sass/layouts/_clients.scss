@@ -1,79 +1,91 @@
 .clients__title {
-    font-weight: 700;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.14;
+  text-align: center;
+  color: $secondary-text-color;
+  margin: 0px;
+
+  @media screen and (min-width: 1199px) {
     font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
-    color: $secondary-text-color;
-    margin: 0px;
-    }
-    
-    .list.clients__list {
-     /*display: flex;
-     flex-wrap: wrap;*/
-     margin-top: 50px;
-    }
-    .clients__icon__items {
-     /*margin-right: 30px;*/
-    }
-    .clients__icon__items:last-child {
-     margin-right: 0px;
-    }
-    
-    .clients__icon__link {
-     /*display: flex;
-     flex-wrap: wrap;*/
-     width: 170px;
-     height: 90px;
-     justify-content: center;
-     align-items: center;
-     
-     border: 1px solid #AFB1B8;
-     fill: #AFB1B8;
-     border-radius: 4px;
-    }
-    .clients__icon__link:focus,
-    .clients__icon__link:hover,
-    .clients__icon__link:active {
-        .clients__icon {
-         fill: $accent-color;
-         transition: $animation;
-        }
-     fill: $accent-color;
-     border: 1px solid $accent-color;
-     transition: $animation;
+    line-height: 0.82;
+}
+
+}
+
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+}
+.clients__item {
+  width: calc((100% - 30px) / 2);
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: 767px) {
+    &:nth-child(2n) {
+      margin-right: 0;
     }
 
-    .clients__icon.client1,
-    .clients__icon.client2,
-    .clients__icon.client3,
-    .clients__icon.client4,
-    .clients__icon.client5,
-    .clients__icon.client6 {
-     fill: $main-text-color;
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
     }
+  }
+
+  @include for-size(tablet) {
+    width: calc((100% - 30px * 2) / 3);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
+  }
+
+  @include for-size(desktop) {
+    flex-direction: row;
+    width: calc(100% - 30px * 5) / 6;
+    margin-bottom: 0;
     
-    .clients__icon.client1 {
-     stroke: 0;
-     width: 45px;
-     height: 50px;
+    &:last-child {
+      margin-right: 0;
     }
-    .clients__icon.client2 {
-     width: 40px;
-     height: 52px;
+  }
+}
+
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+
+  &:focus,
+  &:hover,
+  &:active {
+    border-color: $accent-color;
+    transition: $animation;
+
+    .clients__icon {
+      fill: $accent-color;
+      transition: $animation;
     }
-    .clients__icon.client3 {
-     width: 41px;
-     height: 43px;
-    }
-    .clients__icon.client4 {
-     width: 80px;
-     height: 43px;
-    }
-    .clients__icon.client5 {
-     width: 59px;
-     height: 47px;
-    }
-    .clients__icon.client6 {
-     width: 89px;
-     height: 46px;
-    }
+  }
+}
+
+.clients__icon {
+  fill: $main-text-color;
+}
+
