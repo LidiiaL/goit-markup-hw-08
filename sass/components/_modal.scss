@@ -3,12 +3,15 @@
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding-top: 40px;
-    padding-right: 40px;
-   
-    max-width: 528px;
-    min-height: 581px;
     padding: 40px;
+
+      width: 450px;
+     max-height: 609px;
+    
+     @media screen and (min-width: 1199px){
+       width: 528px;
+       max-height: 581px;
+     }
    
     font-size: 12px;
     border-radius: 4px;
@@ -21,8 +24,8 @@
     margin: 0px 0px 12px;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
-    /*text-align: center;*/
+    line-height: 1.5;
+    text-align: center;
     letter-spacing: 0.03em;
     
     color: $secondary-text-color;
@@ -121,7 +124,11 @@
     position: relative;
     display: inline-block;
     width: 100%;
-    padding-left: 36px;
+    padding-left: 20px;
+
+    @include for-size(desktop) {
+       padding-left: 36px;
+    }
    }
    
    .form-field.checkbox {
@@ -150,7 +157,7 @@
    .icon-check {
     position: absolute;
     top: 50%;
-    left: 13px;
+    left: 0px;
     transform: translateY(-50%);
     display: inline-block;
     width: 16px;
@@ -159,13 +166,23 @@
     border: 1px solid $secondary-text-color;
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+   
+   @include for-size(desktop) {
+      left: 13px;
+   }
+
    }
    
    .checkbox-text {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
+    font-size: 12px;
+    line-height: 1.16;
     color: $main-text-color;
+
+   @include for-size(desktop) {
+      font-size: 14px;
+      line-height: 1.7;
+   }
    }
    
    .link-chekbox {

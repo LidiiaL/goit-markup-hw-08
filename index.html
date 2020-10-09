@@ -15,7 +15,7 @@
   </head>
   <body class="page">
 
-    <header class="page__header">
+   <!-- <header class="page__header">
       <div class="container flexbox"> 
         <nav class="navigation">
           <a href="index.html" class="logo">
@@ -26,6 +26,9 @@
             />
           </a>
           <ul class="list nav-list">
+
+
+
             <li class="nav-item"><a href="index.html" class="nav-link current">Студия</a></li>
             <li class="nav-item"><a href="portfolio.html" class="nav-link">Портфолио</a></li>
             <li class="nav-item"><a href="#contacts" class="nav-link">Контакты</a></li>
@@ -41,34 +44,76 @@
             <div class="address__address">info@devstudio.com</div></a
           >
         
-
-        
           <a href="tel:+38-096-111-11-11" class="address__phone">
             <svg class="icon-phone">
               <use href="./images/icon/sprite.svg#phone"></use>
             </svg>
-            <div class="address__number">+38 096 111 11 11</div></a
+            <span class="address__number">+38 096 111 11 11</span></a
           >
         
         </address>
         </div>
 
       </div>
-    </header>
+    </header>-->
 
-    <!--<header class="header-mobile">
- 
-      <a href="index.html" class="header-mobile__logo">
+<header class="menu-header">
+  <div class="menu-content-wrap">
+
+    
+  
+      <a href="index.html" class="menu-header__logo">
         <img
           src="./images/logo.svg"
           alt="Логотип Web Studio написан латинскими буквами.
             Слово Web голубого цвета, слово Studio чёного цвета"
         />
       </a>
-
-      <button class="hero__order" data-modal-open>Заказать услугу</button>
     
-    </header>-->
+   <nav class="nav">
+      <button type="button" class="menu-button"
+      data-menu-button
+      aria-expanded="false"
+      aria-control="menu-container"
+      >
+
+     <svg width="24" height="24" aria-label="Переключатель мобильного меню"> 
+       <use class="icon-burger" href="./images/icon/sprite.svg#burger"></use>
+       <use class="icon-close-menu" href="./images/icon/sprite.svg#close"></use>
+       
+      
+     </svg>
+   </button>
+
+     <div class="menu-container is-open" data-menu>
+          <ul class="list nav-list">
+            <li class="nav-item"><a href="index.html" class="nav-link current">Студия</a></li>
+            <li class="nav-item"><a href="portfolio.html" class="nav-link">Портфолио</a></li>
+            <li class="nav-item"><a href="#contacts" class="nav-link">Контакты</a></li>
+          </ul>
+
+          <address class="address">
+         
+            <a href="mailto:info@devstudio.com" class="address__mail">
+              <svg class="icon-envelope">
+                <use href="./images/icon/sprite.svg#envelope"></use>
+              </svg>
+              <span class="address__address">info@devstudio.com</span></a
+            >
+          
+            <a href="tel:+38-096-111-11-11" class="address__phone">
+              <svg class="icon-phone">
+                <use href="./images/icon/sprite.svg#phone"></use>
+              </svg>
+              <span class="address__number">+38 096 111 11 11</span></a
+            >
+          
+          </address>
+
+        </div>
+     </nav>
+    </div>
+   </header>
 
     <main>
       <section class="hero">
@@ -461,7 +506,7 @@
 
 
 
-    <!--<div class="hero-backdrop is-hidden" data-modal>
+    <div class="hero-backdrop is-hidden" data-modal>
       <div class="hero-modal is-hidden">
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <button data-modal-close class="modal-button">
@@ -502,7 +547,7 @@
               <label class="form-field checkbox">
                 <input type="checkbox" name="checkbox" class="form-checkbox" />
                 <span class="icon-check"> <!--svg--> 
-                <!--</span>
+                </span>
                 <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю <a href="" class="link-chekbox">Условия договора</a></span>
               </label>
             </div>
@@ -510,9 +555,10 @@
           </form>
         </div>
       </div>
-    </div>-->
+    </div>
 
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-modal.js"></script>
   </body>
 </html>
