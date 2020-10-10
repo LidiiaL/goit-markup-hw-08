@@ -806,7 +806,6 @@ textarea {
 }
 
 .menu-container {
-  height: 400px;
   background-color: #FFFFFF;
   padding: 20px 20px 0px 20px;
   text-align: center;
@@ -883,6 +882,7 @@ textarea {
 }
 
 .nav-item {
+  display: inline-block;
   color: #212121;
 }
 
@@ -951,6 +951,12 @@ textarea {
   }
 }
 
+@media (min-width: 768px) {
+  .address {
+    margin-top: 0;
+  }
+}
+
 @media (min-width: 1200px) {
   .address {
     margin-left: 500px;
@@ -959,6 +965,12 @@ textarea {
 
 .address__phone {
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 676px) {
+  .address__phone {
+    margin-bottom: 0;
+  }
 }
 
 .address__mail,
