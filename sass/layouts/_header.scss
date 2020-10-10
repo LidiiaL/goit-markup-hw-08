@@ -1,119 +1,175 @@
-.page__header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  padding: 30px 0px 30px;
-  color: $main-white-color;
-  background-color: $main-white-color;
-  border-bottom: solid 1px #ECECEC;
-  z-index: 2;
-}
+//
 
-.page__header .flexbox {
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0px;
-}
 
-.navigation {
-  display: flex;
-  align-items: center;
-  margin-right: auto; 
+
+
+/*хэдэр десктоп*/
+
+    .page__header {
+      display: none;
+
+   @include for-size(desktop) {
+     display: block;
   }
 
-  .link {
-    color: $secondary-text-color;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    
-    text-decoration: none;
-    list-style: none;
-   }
-   
-   .nav-list {
-    display: flex;
-   }
-   .nav-item {
-    position: relative;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+       display: flex;
+       position: fixed;
+       top: 0;
+       right: 0;
+        left: 0;
+        padding: 30px 0px 30px;
+        color: $main-white-color;
+        background-color: $main-white-color;
+        border-bottom: solid 1px #ECECEC;
+        z-index: 2;
+       }
+       
+      
 
-   }
-   .nav-item:not(:last-child) {
-    margin-right: 50px;
-   }
-   
-   .nav-item :focus,
-   .nav-item :hover,
-   .nav-item :active {
-    color: $accent-color;
-    transition: $animation;
+      
+
+      .page__header {
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0px;
+      }
+
+     .logo {
+        width: 134px;
+        height: 28px;
+        margin-right: 88px;
+        margin-left: 15px;
+        margin-top: 26px;
+        margin-bottom: 26px;
+
+        @media screen and (min-width: 1199px){
+          width: 145px;
+          height: 31px;
+          margin-right: 93px;
+          margin-top: 24px;
+          margin-bottom: 25px;
+        }
+      }
+
+      .navigation {
+        display: flex;
+        align-items: center;
+        margin-right: auto; 
+        }
+
+        .link {
+          color: $secondary-text-color;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 1.14;
+          
+          text-decoration: none;
+          list-style: none;
+         }
+         
+         .nav-list {
+           @media screen and (min-width: 767px) {
+             display: flex;
+           }
+         }
+
+         .nav-item {
+        position: relative;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 1.14;
+          letter-spacing: 0.02em;
+    
+         &:not(:last-child) {
+          //margin-right: 50px;
+         }
+         
+         }
+         .nav-item :focus,
+         .nav-item :hover,
+         .nav-item :active {
+          color: $accent-color;
+          transition: $animation;
+          }
+         
+          .nav-link {
+            color: $secondary-text-color;
+            text-decoration: none;
+          }
+         
+         .nav-link::after {
+         content: " ";
+         position: absolute;
+         left: 0px;
+         bottom: -33px;
+         width: 100%;
+         height: 4px;
+         background-color: $accent-color;
+         border-radius: 2px;
+         opacity: 0;
+         transition: 500ms opasity linear;
+         }
+         
+         .current::after {
+          opacity: 1;
+         }
+     
+     .address {
+       
+       display: flex;
+       flex-direction: column;
+
+       @include for-size(mobile) {
+       margin-top: 60px;
+       }
+
+       @include for-size(desktop) {
+         margin-left: 500px;
+       }
+     
+  }
+
+     .page__header .mail-link {
+      margin-right: 50px;
+     }
+     
+     
+     .address__number,
+     .address__address {
+     padding-left: 10px;
+     
+     }
+     
+     .address__mail {
+       margin-bottom: 16px;
     }
-   
-    .nav-link {
-      color: $secondary-text-color;
+
+     .address__phone {
+       margin-bottom: 60px;
+     }
+     .address__mail,
+     .address__phone {
+     
+     color: $main-text-color;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
       text-decoration: none;
-    }
-   
-   .nav-link::after {
-   content: " ";
-   position: absolute;
-   left: 0px;
-   bottom: -33px;
-   width: 100%;
-   height: 4px;
-   background-color: $accent-color;
-   border-radius: 2px;
-   opacity: 0;
-   transition: 500ms opasity linear;
-   }
-   
-   .current::after {
-    opacity: 1;
-   }
+     font-style: normal;
+     }
+     .address__mail:focus,
+     .address__mail:hover,
+     .address__mail:active,
+     .address__phone:focus,
+     .address__phone:hover,
+     .address__phone:active {
+      color: $accent-color;
+      transition: $animation;
+     }
 
-
-.page__header .mail-link {
-margin-right: 50px;
-}
-
-
-
-.address__number,
-.address__address {
-padding-left: 10px;
-}
-
-
-.address__mail,
-.address__phone {
-color: $main-text-color;
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-text-decoration: none;
-font-style: normal;
-}
-.address__mail:focus,
-.address__mail:hover,
-.address__mail:active,
-.address__phone:focus,
-.address__phone:hover,
-.address__phone:active {
-color: $accent-color;
-transition: $animation;
-}
-.address__address {
-margin-right: 50px;
-}
-
-
-
-
-
-
-    
+     //.address__address {
+       
+     //}
+     //@include for-size(desktop) {
+     //  margin-right: 50px;
+     //}

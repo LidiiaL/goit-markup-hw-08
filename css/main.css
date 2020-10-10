@@ -384,12 +384,18 @@ textarea {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
-  width: 450px;
+  width: 100%;
   max-height: 609px;
   font-size: 12px;
   border-radius: 4px;
   background-color: #FFFFFF;
   transition: 250ms linear 250ms;
+}
+
+@media screen and (min-width: 450px) and (max-width: 1199px) {
+  .hero-modal {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1199px) {
@@ -689,7 +695,10 @@ textarea {
   padding-bottom: 94px;
 }
 
+/*хэдэр десктоп*/
 .page__header {
+  display: none;
+  display: flex;
   position: fixed;
   top: 0;
   right: 0;
@@ -701,10 +710,35 @@ textarea {
   z-index: 2;
 }
 
-.page__header .flexbox {
+@media (min-width: 1200px) {
+  .page__header {
+    display: block;
+  }
+}
+
+.page__header {
   justify-content: flex-end;
   align-items: center;
   padding: 0px;
+}
+
+.logo {
+  width: 134px;
+  height: 28px;
+  margin-right: 88px;
+  margin-left: 15px;
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+
+@media screen and (min-width: 1199px) {
+  .logo {
+    width: 145px;
+    height: 31px;
+    margin-right: 93px;
+    margin-top: 24px;
+    margin-bottom: 25px;
+  }
 }
 
 .navigation {
@@ -722,8 +756,10 @@ textarea {
   list-style: none;
 }
 
-.nav-list {
-  display: flex;
+@media screen and (min-width: 767px) {
+  .nav-list {
+    display: flex;
+  }
 }
 
 .nav-item {
@@ -732,10 +768,6 @@ textarea {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-
-.nav-item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .nav-item :focus,
@@ -767,6 +799,23 @@ textarea {
   opacity: 1;
 }
 
+.address {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 480px) {
+  .address {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .address {
+    margin-left: 500px;
+  }
+}
+
 .page__header .mail-link {
   margin-right: 50px;
 }
@@ -774,6 +823,14 @@ textarea {
 .address__number,
 .address__address {
   padding-left: 10px;
+}
+
+.address__mail {
+  margin-bottom: 16px;
+}
+
+.address__phone {
+  margin-bottom: 60px;
 }
 
 .address__mail,
@@ -794,10 +851,6 @@ textarea {
 .address__phone:active {
   color: #2196F3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.address__address {
-  margin-right: 50px;
 }
 
 .hero {
@@ -1241,6 +1294,7 @@ textarea {
 
 .footer__box {
   width: 100%;
+  margin-bottom: 60px;
 }
 
 @media (min-width: 768px) {
@@ -1269,6 +1323,7 @@ textarea {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .footer__logo {
@@ -1295,6 +1350,7 @@ textarea {
   line-height: 1.8;
   font-style: normal;
   margin: 0px;
+  margin-bottom: 20px;
 }
 
 .footer__mail__link,
@@ -1347,7 +1403,7 @@ textarea {
   max-width: 353px;
   height: 50px;
   padding: 15px 16px;
-  margin-top: 23px;
+  margin-bottom: 20px;
   background-color: #2F303A;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;

@@ -10,6 +10,7 @@
 
 .footer__box {
   width: 100%;
+  margin-bottom: 60px;
 
   &:not(:last-child) {
     @include for-size(tablet) {
@@ -36,6 +37,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .footer__logo {
@@ -61,6 +63,7 @@
   line-height: 1.8;
   font-style: normal;
   margin: 0px;
+  margin-bottom: 20px;
 }
 
 .footer__mail__link,
@@ -113,7 +116,7 @@
   max-width: 353px;
   height: 50px;
   padding: 15px 16px;
-  margin-top: 23px;
+  margin-bottom: 20px;
 
   background-color: $footer-background-color;
   border: 1px solid rgba(255, 255, 255, 0.3);
