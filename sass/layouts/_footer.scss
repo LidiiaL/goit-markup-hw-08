@@ -19,6 +19,7 @@
 
     @include for-size(desktop) {
       width: calc((50% - 45px) / 2);
+      margin-right: 30px;
     }
   }
 
