@@ -284,7 +284,11 @@ margin-right: 50px;
 .nav-mobile-link {
 position: relative;
 color: $secondary-text-color;
+font-weight: 500;
+font-size: 18px;
+line-height: 1.17;
 text-decoration: none;
+
 
 &:focus,
 &:hover,
@@ -294,7 +298,7 @@ transition: $animation;
 }
 
 &::after {
-content: ” “;
+content: "";
 position: absolute;
 display: block;
 width: 100%;
