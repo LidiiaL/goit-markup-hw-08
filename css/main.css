@@ -286,7 +286,6 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
-  outline: red solid 1px;
 }
 
 body {
