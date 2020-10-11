@@ -1,7 +1,12 @@
 .logo {
+    width: 134px;
+    height: 28px;
 
-      width: 145px;
-      margin-right: 93px;
+     @include for-size (desktop) {
+        max-width: 145px;
+        min-height: 31px;
+        margin-right: 93px;
+     }
       
   }
   

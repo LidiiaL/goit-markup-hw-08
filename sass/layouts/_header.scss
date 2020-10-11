@@ -134,6 +134,7 @@ margin-right: 50px;
 
 .address__mail,
 .address__phone {
+display: flex;
 color: $main-text-color;
 font-weight: 500;
 font-size: 14px;

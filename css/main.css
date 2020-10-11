@@ -286,7 +286,6 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
-  outline: 2px solid red;
 }
 
 body {
@@ -846,6 +845,7 @@ textarea {
 
 .address__mail,
 .address__phone {
+  display: flex;
   color: #757575;
   font-weight: 500;
   font-size: 14px;
