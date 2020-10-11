@@ -5,18 +5,14 @@
   top: 0;
   right: 0;
   left: 0;
-  padding: 16px 0px 15px;
+  padding: 14px 0px 14px;
   color: $main-white-color;
   background-color: $main-white-color;
   border-bottom: solid 1px #ECECEC;
   z-index: 2;
-@media screen and (min-width: 768px) and (max-width: 1198px){
-  padding: 11px 0px 10px;
+@media screen and (min-width: 768px) {
+  padding: 24px 0px 24px;
 }
-@media screen and (min-width: 1199px){
-  padding: 25px 0px 25px;
-}
-
 }
 
 .page__header .flexbox {
@@ -305,7 +301,7 @@ display: block;
 width: 100%;
 
 left: 0px;
-bottom: -17px;
+bottom: -8px;
 
 height: 4px;
 background-color: $accent-color;

@@ -700,22 +700,16 @@ textarea {
   top: 0;
   right: 0;
   left: 0;
-  padding: 16px 0px 15px;
+  padding: 14px 0px 14px;
   color: #FFFFFF;
   background-color: #FFFFFF;
   border-bottom: solid 1px #ECECEC;
   z-index: 2;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1198px) {
+@media screen and (min-width: 768px) {
   .page__header {
-    padding: 11px 0px 10px;
-  }
-}
-
-@media screen and (min-width: 1199px) {
-  .page__header {
-    padding: 25px 0px 25px;
+    padding: 24px 0px 24px;
   }
 }
 
@@ -1012,7 +1006,7 @@ textarea {
   display: block;
   width: 100%;
   left: 0px;
-  bottom: -17px;
+  bottom: -8px;
   height: 4px;
   background-color: #2196F3;
   border-radius: 2px;
@@ -1679,6 +1673,12 @@ textarea {
 @media screen and (min-width: 768px) {
   .subscribe-button {
     margin-top: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .subscribe-button {
+    margin-left: 12px;
   }
 }
 
