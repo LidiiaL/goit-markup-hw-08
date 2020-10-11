@@ -142,35 +142,39 @@
           <ul class="list exsamples__list">
             <li class="grid examples__item">
               <div class="examples__cards">
-                <img
-                  src="images/service1-copy.jpg"
-                  alt="рабочий процесс разработчика. 
-                мужские руки на клавиатуре, два монитора с кодом, 
-                канцелярские мелочи."
-                  width="370"
-                />
+                <picture>
+                  <source srcset="./images/desktop/studio/service1@1x.png 1x, ./images/desktop/studio/service1@2x.png 2x, ./images/desktop/studio/service1@3x.png 3x" media="(min-width: 1200px)" />
+                  <img class="works__image" src="./images/desktop/studio/service1@3x.png" 
+                  alt="мужские руки на клавиатуре, два монитора с кодом, 
+                  канцелярские мелочи."
+                    width="370" />
+                </picture>
                 <span class="pictures-inscription">Декстопные приложения</span>
               </div>
             </li>
+
             <li class="grid examples__item">
               <div class="examples__cards">
-                <img
-                  src="images/service2-copy.jpg"
+                <picture>
+                  <source srcset="./images/desktop/studio/service2@1x.png 1x, ./images/desktop/studio/service2@2x.png 2x, ./images/desktop/studio/service2@3x.png 3x" media="(min-width: 1200px)" />
+                  <img class="works__image" src="./images/desktop/studio/service2@1x.png" 
                   alt="женские руки. в левой смартфон, 
-                правая лежит на клавиатуре ноутбука."
-                  width="370"
-                />
+                  правая лежит на клавиатуре ноутбука."
+                    width="370" />
+                </picture>
                 <span class="pictures-inscription">Мобильные приложения</span>
               </div>
             </li>
+
             <li class="grid examples__item">
               <div class="examples__cards">
-                <img
-                  src="images/service3.jpg"
+                <picture>
+                  <source srcset="./images/desktop/studio/service3@1x.png 1x, ./images/desktop/studio/service3@2x.png 2x, ./images/desktop/studio/service3@3x.png 3x" media="(min-width: 1200px)" />
+                  <img class="works__image" src="./images/desktop/studio/service3@1x.png" 
                   alt="графический планшет в женских 
-                руках на фоне компьютера и компьютерной мышки."
-                  width="370"
-                />
+                  руках на фоне компьютера и компьютерной мышки."
+                    width="370"/>
+                </picture>
                 <span class="pictures-inscription">Дизайнерские решения</span>
               </div>
             </li>
@@ -187,10 +191,13 @@
             
             <li class="grid our__team__member__box">
               <!-- Произвольный графический контент: фотография, график, диаграмма и т. п. -->
-              <img
-                src="images/igor-demyanenko-copy.jpg"
-                alt="улыбающийся молодой мужчина, шатен в очках, с бородкой и усами, в коричневой рубашке."
-              />
+              <picture>
+                <source srcset="./images/desktop/studio/ihor-desktop@1x.jpg 1x, ./images/desktop/studio/ihor-desktop@2x.jpg 2x, ./images/desktop/studio/ihor-desktop@3x.jpg 3x" media="(min-width: 1200px)" />
+                <source srcset="./images/tablet/studio/ihor-tablet@1x.png 1x, ./images/tablet/studio/ihor-tablet@2x.png 2x, ./images/tablet/studio/ihor-tablet@3x.png 3x" media="(min-width: 768px)" />
+                <source srcset="./images/mobile/studio/ihor-mobile@1x.png 1x, ./images/mobile/studio/ihor-mobile@2x.png 2x, ./images/mobile/studio/ihor-mobile@3x.png 3x" media="(max-width: 767px)" />
+                <img class="team__image" src="./images/desktop/studio/ihor-desktop@1x.jpg" 
+                alt="улыбающийся молодой мужчина, шатен в очках, с бородкой и усами, в коричневой рубашке." />
+              </picture>
 
               <p class="our__team__names">Игорь Демьяненко</p>
               <p class="our__team__position" lang="en">Product Designer</p>
@@ -223,10 +230,13 @@
             
             <li class="grid our__team__member__box">
               <!-- Произвольный графический контент: фотография, график, диаграмма и т. п. -->
-              <img
-                src="images/olga-repina-copy.jpg"
-                alt="улыбающаяся молодая девушка, блондинка с длинными волосами, в очках и черном пиджаке."
-              />
+              <picture>
+                <source srcset="./images/desktop/studio/olha-desktop@1x.jpg 1x, ./images/desktop/studio/olha-desktop@2x.jpg 2x, ./images/desktop/studio/olha-desktop@3x.jpg 3x" media="(min-width: 1200px)" />
+                <source srcset="./images/tablet/studio/olha-tablet@1x.png 1x, ./images/tablet/studio/olha-tablet@2x.png 2x, ./images/tablet/studio/olha-tablet@3x.png 3x" media="(min-width: 768px)" />
+                <source srcset="./images/mobile/studio/olha-mobile@1x.png 1x, ./images/mobile/studio/olha-mobile@2x.png 2x, ./images/mobile/studio/olha-mobile@3x.png 3x" media="(max-width: 767px)" />
+                <img class="team__image" src="./images/desktop/studio/olha-desktop@1x.jpg" 
+                alt="улыбающаяся молодая девушка, блондинка с длинными волосами, в очках и черном пиджаке."/>
+              </picture>
 
               <p class="our__team__names">Ольга Репина</p>
               <p class="our__team__position" lang="en">Frontend Developer</p>
@@ -259,11 +269,13 @@
             
             <li class="grid our__team__member__box">
               <!-- Произвольный графический контент: фотография, график, диаграмма и т. п. -->
-              <img
-                src="images/nikolay-tarasov-copy.jpg"
-                alt="улыбающийся молодой мужчина, шатен в светлой рубашке, расположен в полупрофиль"
-              />
-
+              <picture>
+                <source srcset="./images/desktop/studio/nikola-desktop@1x.jpg 1x, ./images/desktop/studio/nikola-desktop@2x.jpg 2x, ./images/desktop/studio/nikola-desktop@3x.jpg 3x" media="(min-width: 1200px)" />
+                <source srcset="./images/tablet/studio/nikola-tablet@1x.png 1x, ./images/tablet/studio/nikola-tablet@2x.png 2x, ./images/tablet/studio/nikola-tablet@3x.png 3x" media="(min-width: 768px)" />
+                <source srcset="./images/mobile/studio/nikola-mobile@1x.png 1x, ./images/mobile/studio/nikola-mobile@2x.png 2x, ./images/mobile/studio/nikola-mobile@3x.png 3x" media="(max-width: 767px)" />
+                <img class="team__image" src="./images/desktop/studio/nikola-desktop@1x.jpg" 
+                alt="улыбающийся молодой мужчина, шатен в светлой рубашке, расположен в полупрофиль"/>
+              </picture>
               <p class="our__team__names">Николай Тарасов</p>
               <p class="our__team__position" lang="en">Marketing</p>
 
@@ -295,9 +307,13 @@
 
             <li class="grid our__team__member__box">
               <!-- Произвольный графический контент: фотография, график, диаграмма и т. п. -->
-              <img src="images/mikhail-ermakov-copy.jpg" alt="молодой мужчина c полуулыбкой, шатен в черной футболке, в очках" 
-               />
-
+              <picture>
+                <source srcset="./images/desktop/studio/michail-desktop@1x.jpg 1x, ./images/desktop/studio/michail-desktop@2x.jpg 2x, ./images/desktop/studio/michail-desktop@3x.jpg 3x" media="(min-width: 1200px)" />
+                <source srcset="./images/tablet/studio/michail-tablet@1x.png 1x, ./images/tablet/studio/michail-tablet@2x.png 2x, ./images/tablet/studio/michail-tablet@3x.png 3x" media="(min-width: 768px)" />
+                <source srcset="./images/mobile/studio/michail-mobile@1x.png 1x, ./images/mobile/studio/michail-mobile@2x.png 2x, ./images/mobile/studio/michail-mobile@3x.png 3x" media="(max-width: 767px)" />
+                <img class="team__image" src="./images/desktop/studio/michail-desktop@1x.jpg" 
+                alt="молодой мужчина c полуулыбкой, шатен в черной футболке, в очках"/>
+              </picture>
               <p class="our__team__names">Михаил Ермаков</p>
               <p class="our__team__position" lang="en">UI Designer</p>
 
@@ -513,7 +529,6 @@
               <span class="form-label">Комментарии</span>
               <textarea name="comments" cols="30" rows="5" class="form-textarea" placeholder="Введите текст"></textarea>
 
-              <svg class="icon-input"><use href=". /images/icon/sprite.svg#person"></use></svg>
             </label>
 
             <div class="checkbox-box">
