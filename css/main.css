@@ -286,6 +286,7 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
+  outline: red solid 1px;
 }
 
 body {
@@ -1611,6 +1612,12 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  .footer__social__links {
+    justify-content: left;
+  }
 }
 
 .footer__social__item:not(:last-child) {

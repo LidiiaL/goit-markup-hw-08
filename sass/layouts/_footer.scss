@@ -81,6 +81,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+ @include for-size(desktop) {
+  justify-content: left;
+ }
 }
 
 .footer__social__item:not(:last-child) {
